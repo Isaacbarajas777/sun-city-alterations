@@ -38,7 +38,6 @@ footer{background:#2e2a26;color:#cbbba5;text-align:center;padding:2rem 1rem;font
 .pi b{font-family:'Playfair Display';color:var(--deep);font-size:1.15rem}.pi span{background:var(--gold);color:#fff;font-weight:700;border-radius:30px;padding:.25rem .9rem}
 .all{columns:3 220px;max-width:900px;margin:auto;list-style:none}.all li{padding:.45rem 0;break-inside:avoid}.all li:before{content:'✓ ';color:var(--gold);font-weight:700}
 .note{text-align:center;margin-top:1.5rem;color:#6b5f55;font-size:.9rem}
-.flyer{display:block;max-width:1000px;margin:2.5rem auto 0}.flyer img{width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 8px 28px rgba(90,58,34,.18);transition:transform .2s}.flyer img:hover{transform:scale(1.01)}
 .logo{display:flex;align-items:center;gap:.55rem}.logo img{border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,.15)}.hero-logo{width:min(220px,55vw);height:auto;border-radius:50%;box-shadow:0 8px 30px rgba(90,58,34,.18);margin-bottom:.5rem}
 .cl{color:var(--deep);font-weight:700;text-decoration:none;border-bottom:2px solid var(--gold);word-break:break-word}footer a{color:#e6c68f;text-decoration:none}
 .qf{max-width:760px;margin:2.5rem auto 0;background:#fff;border-radius:16px;padding:2rem;border-top:4px solid var(--gold);box-shadow:0 6px 22px rgba(90,58,34,.1)}
@@ -51,7 +50,7 @@ footer{background:#2e2a26;color:#cbbba5;text-align:center;padding:2rem 1rem;font
 @media(max-width:640px){.qf .row{display:block}.qf{padding:1.4rem}}
 </style></head><body>
 <nav><div class="wrap"><a class="logo" href="#"><img src="img/logo.png" alt="" width="44" height="44">Sun City <span>Alterations</span></a>
-<ul><li><a href="#services">Services</a></li><li><a href="#prices">Prices</a></li><li><a href="#why">Why Us</a></li><li><a href="#hours">Hours</a></li><li><a href="#quote">Get a Quote</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<ul><li><a href="#services">Services</a></li><li><a href="#why">Why Us</a></li><li><a href="#hours">Hours</a></li><li><a href="#quote">Get a Quote</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 <header class="hero"><div class="wrap"><img class="hero-logo" src="img/logo.png" alt="Sun City Alterations logo: a sewing machine beneath a golden sun"><h1>Sun City Alterations</h1>
 <p>Expert tailoring and alterations with a personal touch, so every garment fits just right.<br><strong style="color:var(--gold)">Proudly serving Las Vegas</strong></p>
 <a class="btn" href="tel:+17029077273">📞 Call Now</a><a class="btn alt" href="#contact">Contact Us</a><a class="btn alt" href="#services">Our Services</a></div></header>
@@ -64,7 +63,6 @@ footer{background:#2e2a26;color:#cbbba5;text-align:center;padding:2rem 1rem;font
 <div class="card"><div class="ic">🧵</div><h3>Zippers &amp; Repairs</h3><p>Zipper replacement, tears, seams, buttons, and everyday mending.</p></div>
 <div class="card"><div class="ic">✂️</div><h3>Taking In &amp; Letting Out</h3><p>Resizing garments so your favorite clothes fit comfortably again.</p></div>
 </div></div></section>
-<section id="prices" class="prices"><div class="wrap"><h2>Featured Prices</h2><p class="sub">Popular alterations at a glance.</p><div class="plist"><div class="pi"><b>Basic Hem</b><span>$15</span></div><div class="pi"><b>Same Day Service</b><span>$25</span></div><div class="pi"><b>Shorten Jacket Sleeves</b><span>$50</span></div><div class="pi"><b>Jacket Take In</b><span>$60</span></div><div class="pi"><b>Pants Taper</b><span>$20</span></div><div class="pi"><b>Pants Waist In</b><span>$20</span></div></div><a class="flyer" id="flyerLink" href="img/flyer.jpg" target="_blank" rel="noopener"><picture><source media="(max-width:700px)" srcset="img/flyer-mobile.jpg"><img src="img/flyer.jpg" alt="Sun City Alterations flyer showing featured prices (Basic Hem $15, Same Day Service $25, Shorten Jacket Sleeves $50, Jacket Take In $60, Pants Taper $20, Pants Waist In $20), the list of alterations offered, examples of suit and jacket fittings, and Same Day Service and Professional Craftsmanship banners"></picture></a></div></section>
 <section id="all"><div class="wrap"><h2>We Do All Kinds of Alterations</h2><p class="sub">Don't see what you need? Just ask.</p><ul class="all"><li>Pants Hem</li><li>Shorten Jacket Sleeves</li><li>Jacket Take In</li><li>Pants Taper</li><li>Pants Waist In/Out</li><li>Replace Zipper</li><li>Darts (Take In)</li><li>Shirt Hem</li><li>Sleeve Hem (with Cuff)</li><li>Crossover Leg</li><li>Cutting Suspenders</li><li>Pleated School Skirts</li><li>Lined Hem</li></ul></div></section>
 <section id="why" class="why"><div class="wrap"><h2>Why Choose Us</h2><p class="sub">A family-run shop that treats your clothes like our own.</p>
 <div class="grid">
@@ -89,5 +87,5 @@ footer{background:#2e2a26;color:#cbbba5;text-align:center;padding:2rem 1rem;font
 <label>Message<textarea name="message" rows="4" placeholder="Describe your garment and what you'd like done"></textarea></label>
 <button class="btn" type="submit">Send Request</button></form></div></div></section>
 <footer>© <span id="y"></span> Sun City Alterations · Tailoring &amp; Alterations · Las Vegas, NV<br>Monday – Saturday, 10 AM – 5 PM<br><a href="tel:+17029077273">(702) 907-7273</a> · <a href="mailto:hello@suncityalterations.com">hello@suncityalterations.com</a></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear();(function(){var m=matchMedia('(max-width:700px)'),a=document.getElementById('flyerLink');function u(){a.href=m.matches?'img/flyer-mobile.jpg':'img/flyer.jpg'}u();m.addEventListener('change',u)})();if(/[?&]sent=1/.test(location.search))document.getElementById('thanks').hidden=false</script>
+<script>document.getElementById('y').textContent=new Date().getFullYear();if(/[?&]sent=1/.test(location.search))document.getElementById('thanks').hidden=false</script>
 </body></html>
