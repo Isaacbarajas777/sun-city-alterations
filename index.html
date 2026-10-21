@@ -32,7 +32,7 @@ section{padding:4.5rem 0}h2{text-align:center;font-size:2.2rem;margin-bottom:.5r
 .ph{display:inline-block;background:#fff3d6;border:1px dashed var(--gold);color:var(--deep);padding:.2rem .6rem;border-radius:6px;font-style:italic}
 .contact .grid .card{text-align:center}
 footer{background:#2e2a26;color:#cbbba5;text-align:center;padding:2rem 1rem;font-size:.9rem}
-@media(max-width:640px){nav ul{display:none}.hero{padding:4rem 0 3.5rem}}
+@media(max-width:640px){.hero{padding:4rem 0 3.5rem}}
 .prices{background:var(--sand)}.plist{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;max-width:900px;margin:auto}
 .pi{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:12px;padding:1rem 1.3rem;border-left:4px solid var(--gold);box-shadow:0 3px 12px rgba(90,58,34,.07)}
 .pi b{font-family:'Playfair Display';color:var(--deep);font-size:1.15rem}.pi span{background:var(--gold);color:#fff;font-weight:700;border-radius:30px;padding:.25rem .9rem}
@@ -50,20 +50,38 @@ footer{background:#2e2a26;color:#cbbba5;text-align:center;padding:2rem 1rem;font
 @media(max-width:640px){.qf .row{display:block}.qf{padding:1.4rem}}
 .flyer{display:block;max-width:1000px;margin:auto}.flyer img{width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 8px 28px rgba(90,58,34,.18);transition:transform .2s}.flyer img:hover{transform:scale(1.01)}
 .badge{display:inline-block;margin-top:1rem;background:var(--deep);color:#f6dfae;border:1.5px solid var(--gold);padding:.45rem 1.2rem;border-radius:40px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem}
+nav .wrap{position:relative}.menu{align-items:center}.dd{position:relative;display:flex;align-items:center;gap:.15rem}
+.ddbtn{background:none;border:0;color:var(--gold);font-size:1rem;cursor:pointer;padding:.2rem .3rem;border-radius:6px;transition:transform .2s}
+.dd.open .ddbtn{transform:rotate(180deg)}
+nav .sub{margin:0;display:none;position:absolute;top:100%;left:-1rem;min-width:250px;background:var(--cream);border:1px solid var(--sand);border-top:3px solid var(--gold);border-radius:0 0 12px 12px;box-shadow:0 10px 26px rgba(90,58,34,.15);padding:.5rem 0;flex-direction:column;gap:0;z-index:20}
+.dd:hover .sub,.dd.open .sub{display:flex}.dd:after{content:'';position:absolute;left:0;right:0;top:100%;height:12px}
+nav .sub a{display:block;text-align:left;padding:.55rem 1.1rem;font-size:.93rem}nav .sub a:hover,nav .sub a:focus{background:var(--sand);color:var(--deep)}
+nav .sub .sep{border-top:1px solid var(--sand);margin-top:.3rem;padding-top:.3rem}nav .sub .sep a{font-weight:700;color:var(--deep)}
+nav a:focus-visible,nav button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.burger{display:none;background:none;border:1.5px solid var(--gold);border-radius:8px;width:44px;height:40px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.burger span{display:block;width:20px;height:2px;background:var(--deep);transition:.2s}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.burger[aria-expanded=true] span:nth-child(2){opacity:0}.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.card[id]{scroll-margin-top:90px}section{scroll-margin-top:70px}
+@media(max-width:640px){.burger{display:flex}.menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);border-bottom:3px solid var(--gold);box-shadow:0 10px 24px rgba(90,58,34,.15);padding:.4rem 0}
+.menu.open{display:flex}.menu>li>a{display:block;padding:.8rem 1.4rem;font-size:1.05rem}.menu>li{border-bottom:1px solid var(--sand)}
+.dd{flex-wrap:wrap;justify-content:space-between;gap:0;align-content:flex-start}.dd>a{flex:1}.ddbtn{padding:.6rem 1.2rem;font-size:1.2rem}
+.dd:hover .sub{display:none}.dd.open .sub,.dd.open:hover .sub{display:flex}.dd:after{display:none}
+nav .sub{position:static;width:100%;min-width:0;box-shadow:none;border:0;border-radius:0;background:var(--sand);padding:.2rem 0}nav .sub a{padding:.6rem 2.2rem}}
 </style></head><body>
 <nav><div class="wrap"><a class="logo" href="#"><img src="img/logo.png" alt="" width="44" height="44">Sun City <span>Alterations</span></a>
-<ul><li><a href="#services">Services</a></li><li><a href="#why">Why Us</a></li><li><a href="#hours">Hours</a></li><li><a href="#quote">Get a Quote</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<button class="burger" id="burger" aria-expanded="false" aria-controls="navmenu" aria-label="Open menu"><span></span><span></span><span></span></button>
+<ul id="navmenu" class="menu"><li class="dd"><a href="#services">Services</a><button class="ddbtn" id="ddbtn" aria-expanded="false" aria-controls="ddmenu" aria-label="Show services menu">▾</button><ul class="sub" id="ddmenu"><li><a href="#svc-hemming">Hemming</a></li><li><a href="#svc-pants">Pants &amp; Jeans</a></li><li><a href="#svc-dress">Dress, Formal &amp; Wedding</a></li><li><a href="#svc-suits">Suits</a></li><li><a href="#svc-repairs">Zippers &amp; Repairs</a></li><li><a href="#svc-resizing">Taking In &amp; Letting Out</a></li><li class="sep"><a href="#all">All Alterations</a></li></ul></li><li><a href="#why">Why Us</a></li><li><a href="#hours">Hours</a></li><li><a href="#quote">Get a Quote</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 <header class="hero"><div class="wrap"><img class="hero-logo" src="img/logo.png" alt="Sun City Alterations logo: a sewing machine beneath a golden sun"><div class="badge">★ 30+ Years of Experience ★</div><h1>Sun City Alterations</h1>
 <p>Expert tailoring and alterations with a personal touch, so every garment fits just right.<br><strong style="color:var(--gold)">Proudly serving Las Vegas</strong></p>
 <a class="btn" href="tel:+17029077273">📞 Call Now</a><a class="btn alt" href="#contact">Contact Us</a><a class="btn alt" href="#services">Our Services</a></div></header>
 <section id="services"><div class="wrap"><h2>Our Services</h2><p class="sub">From quick hems to wedding gowns, every piece gets careful attention.</p>
 <div class="grid">
-<div class="card"><div class="ic">📏</div><h3>Hemming</h3><p>Pants, skirts, dresses, and sleeves hemmed to the right length.</p></div>
-<div class="card"><div class="ic">👖</div><h3>Pants &amp; Jeans</h3><p>Hems (including original hems on jeans), waist adjustments, and tapering.</p></div>
-<div class="card"><div class="ic">👗</div><h3>Dress, Formal &amp; Wedding</h3><p>Bridal gowns, bridesmaid and prom dresses, and evening wear fitted for your big day.</p></div>
-<div class="card"><div class="ic">🤵</div><h3>Suits</h3><p>Jacket and trouser tailoring for a sharp, polished fit.</p></div>
-<div class="card"><div class="ic">🧵</div><h3>Zippers &amp; Repairs</h3><p>Zipper replacement, tears, seams, buttons, and everyday mending.</p></div>
-<div class="card"><div class="ic">✂️</div><h3>Taking In &amp; Letting Out</h3><p>Resizing garments so your favorite clothes fit comfortably again.</p></div>
+<div class="card" id="svc-hemming"><div class="ic">📏</div><h3>Hemming</h3><p>Pants, skirts, dresses, and sleeves hemmed to the right length.</p></div>
+<div class="card" id="svc-pants"><div class="ic">👖</div><h3>Pants &amp; Jeans</h3><p>Hems (including original hems on jeans), waist adjustments, and tapering.</p></div>
+<div class="card" id="svc-dress"><div class="ic">👗</div><h3>Dress, Formal &amp; Wedding</h3><p>Bridal gowns, bridesmaid and prom dresses, and evening wear fitted for your big day.</p></div>
+<div class="card" id="svc-suits"><div class="ic">🤵</div><h3>Suits</h3><p>Jacket and trouser tailoring for a sharp, polished fit.</p></div>
+<div class="card" id="svc-repairs"><div class="ic">🧵</div><h3>Zippers &amp; Repairs</h3><p>Zipper replacement, tears, seams, buttons, and everyday mending.</p></div>
+<div class="card" id="svc-resizing"><div class="ic">✂️</div><h3>Taking In &amp; Letting Out</h3><p>Resizing garments so your favorite clothes fit comfortably again.</p></div>
 </div></div></section>
 <section id="flyer" style="padding-top:0"><div class="wrap"><a class="flyer" id="flyerLink" href="img/flyer.jpg" target="_blank" rel="noopener"><picture><source media="(max-width:700px)" srcset="img/flyer-mobile.jpg"><img src="img/flyer.jpg" alt="Sun City Alterations flyer showing featured prices (Basic Hem $15, Same Day Service $25, Shorten Jacket Sleeves $50, Jacket Take In $60, Pants Taper $20, Pants Waist In $20), the list of alterations offered, examples of suit and jacket fittings, and Same Day Service and Professional Craftsmanship banners"></picture></a></div></section>
 <section id="all"><div class="wrap"><h2>We Do All Kinds of Alterations</h2><p class="sub">Don't see what you need? Just ask.</p><ul class="all"><li>Pants Hem</li><li>Shorten Jacket Sleeves</li><li>Jacket Take In</li><li>Pants Taper</li><li>Pants Waist In/Out</li><li>Replace Zipper</li><li>Darts (Take In)</li><li>Shirt Hem</li><li>Sleeve Hem (with Cuff)</li><li>Crossover Leg</li><li>Cutting Suspenders</li><li>Pleated School Skirts</li><li>Lined Hem</li></ul></div></section>
@@ -90,5 +108,15 @@ footer{background:#2e2a26;color:#cbbba5;text-align:center;padding:2rem 1rem;font
 <label>Message<textarea name="message" rows="4" placeholder="Describe your garment and what you'd like done"></textarea></label>
 <button class="btn" type="submit">Send Request</button></form></div></div></section>
 <footer>© <span id="y"></span> Sun City Alterations · Tailoring &amp; Alterations · Las Vegas, NV<br>Monday – Saturday, 10 AM – 5 PM<br><a href="tel:+17029077273">(702) 907-7273</a> · <a href="mailto:hello@suncityalterations.com">hello@suncityalterations.com</a></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear();if(/[?&]sent=1/.test(location.search))document.getElementById('thanks').hidden=false;(function(){var a=document.getElementById('flyerLink');if(!a||!window.matchMedia)return;var m=matchMedia('(max-width:700px)');function u(){a.href=m.matches?'img/flyer-mobile.jpg':'img/flyer.jpg'}u();m.addEventListener&&m.addEventListener('change',u)})()</script>
+<script>document.getElementById('y').textContent=new Date().getFullYear();if(/[?&]sent=1/.test(location.search))document.getElementById('thanks').hidden=false;(function(){var a=document.getElementById('flyerLink');if(!a||!window.matchMedia)return;var m=matchMedia('(max-width:700px)');function u(){a.href=m.matches?'img/flyer-mobile.jpg':'img/flyer.jpg'}u();m.addEventListener&&m.addEventListener('change',u)})();(function(){var b=document.getElementById('burger'),m=document.getElementById('navmenu'),d=document.getElementById('ddbtn'),dd=d.parentNode;
+function setDD(o){dd.classList.toggle('open',o);d.setAttribute('aria-expanded',o)}
+function setM(o){m.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu');if(!o)setDD(false)}
+b.addEventListener('click',function(){setM(b.getAttribute('aria-expanded')!=='true')});
+d.addEventListener('click',function(e){e.stopPropagation();setDD(d.getAttribute('aria-expanded')!=='true')});
+var mq=matchMedia('(min-width:641px)');dd.addEventListener('mouseenter',function(){if(mq.matches)d.setAttribute('aria-expanded','true')});dd.addEventListener('mouseleave',function(){if(mq.matches&&!dd.classList.contains('open'))d.setAttribute('aria-expanded','false')});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){setM(false);setDD(false)}});
+document.addEventListener('click',function(e){if(!e.target.closest('nav')){setM(false);setDD(false)}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(dd.classList.contains('open')){setDD(false);d.focus()}else if(m.classList.contains('open')){setM(false);b.focus()}}});
+dd.addEventListener('focusout',function(e){if(!dd.contains(e.relatedTarget))setDD(false)});
+})()</script>
 </body></html>
