@@ -40,12 +40,13 @@ footer{background:#2e2a26;color:#cbbba5;text-align:center;padding:2rem 1rem;font
 .note{text-align:center;margin-top:1.5rem;color:#6b5f55;font-size:.9rem}
 .flyer{display:block;max-width:1000px;margin:2.5rem auto 0}.flyer img{width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 8px 28px rgba(90,58,34,.18);transition:transform .2s}.flyer img:hover{transform:scale(1.01)}
 .logo{display:flex;align-items:center;gap:.55rem}.logo img{border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,.15)}.hero-logo{width:min(220px,55vw);height:auto;border-radius:50%;box-shadow:0 8px 30px rgba(90,58,34,.18);margin-bottom:.5rem}
+.cl{color:var(--deep);font-weight:700;text-decoration:none;border-bottom:2px solid var(--gold);word-break:break-word}footer a{color:#e6c68f;text-decoration:none}
 </style></head><body>
 <nav><div class="wrap"><a class="logo" href="#"><img src="img/logo.png" alt="" width="44" height="44">Sun City <span>Alterations</span></a>
 <ul><li><a href="#services">Services</a></li><li><a href="#prices">Prices</a></li><li><a href="#why">Why Us</a></li><li><a href="#hours">Hours</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 <header class="hero"><div class="wrap"><img class="hero-logo" src="img/logo.png" alt="Sun City Alterations logo: a sewing machine beneath a golden sun"><h1>Sun City Alterations</h1>
 <p>Expert tailoring and alterations with a personal touch, so every garment fits just right.</p>
-<a class="btn" href="#contact">Visit or Call Us</a><a class="btn alt" href="#services">Our Services</a></div></header>
+<a class="btn" href="tel:+17029077273">📞 Call Now</a><a class="btn alt" href="#contact">Visit Us</a><a class="btn alt" href="#services">Our Services</a></div></header>
 <section id="services"><div class="wrap"><h2>Our Services</h2><p class="sub">From quick hems to wedding gowns, every piece gets careful attention.</p>
 <div class="grid">
 <div class="card"><div class="ic">📏</div><h3>Hemming</h3><p>Pants, skirts, dresses, and sleeves hemmed to the right length.</p></div>
@@ -68,9 +69,10 @@ footer{background:#2e2a26;color:#cbbba5;text-align:center;padding:2rem 1rem;font
 <section id="contact" class="contact"><div class="wrap"><h2>Contact &amp; Visit</h2><p class="sub">Bring your garments in for a fitting, or give us a call with questions.</p>
 <div class="grid">
 <div class="card"><div class="ic">📍</div><h3>Address</h3><p><span class="ph">[Address coming soon]</span></p></div>
-<div class="card"><div class="ic">📞</div><h3>Phone</h3><p><span class="ph">[Phone coming soon]</span></p></div>
+<div class="card"><div class="ic">📞</div><h3>Phone</h3><p><a class="cl" href="tel:+17029077273">(702) 907-7273</a></p></div>
+<div class="card"><div class="ic">✉️</div><h3>Email</h3><p><a class="cl" href="mailto:hello@suncityalterations.com">hello@suncityalterations.com</a></p></div>
 <div class="card"><div class="ic">🕙</div><h3>Hours</h3><p>10 AM – 5 PM<br><span class="ph">[Days coming soon]</span></p></div>
 </div></div></section>
-<footer>© <span id="y"></span> Sun City Alterations · Tailoring &amp; Alterations</footer>
+<footer>© <span id="y"></span> Sun City Alterations · Tailoring &amp; Alterations<br><a href="tel:+17029077273">(702) 907-7273</a> · <a href="mailto:hello@suncityalterations.com">hello@suncityalterations.com</a></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear();(function(){var m=matchMedia('(max-width:700px)'),a=document.getElementById('flyerLink');function u(){a.href=m.matches?'img/flyer-mobile.jpg':'img/flyer.jpg'}u();m.addEventListener('change',u)})()</script>
 </body></html>
