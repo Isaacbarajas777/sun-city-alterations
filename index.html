@@ -67,13 +67,23 @@ nav a:focus-visible,nav button:focus-visible{outline:2px solid var(--gold);outli
 .dd{flex-wrap:wrap;justify-content:space-between;gap:0;align-content:flex-start}.dd>a{flex:1}.ddbtn{padding:.6rem 1.2rem;font-size:1.2rem}
 .dd:hover .sub{display:none}.dd.open .sub,.dd.open:hover .sub{display:flex}.dd:after{display:none}
 nav .sub{position:static;width:100%;min-width:0;box-shadow:none;border:0;border-radius:0;background:var(--sand);padding:.2rem 0}nav .sub a{padding:.6rem 2.2rem}}
-</style></head><body>
+.vegas{position:relative;padding:4.5rem 0 0;background:linear-gradient(180deg,#fbf6ee 0%,#f9e3bd 35%,#f2b866 75%,#e08e3c 100%);overflow:hidden;text-align:center}
+.vline{font-family:'Playfair Display';font-style:italic;font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--deep);max-width:760px;margin:.6rem auto 1.8rem}
+.areas-l{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:700;color:#8a5a2b;margin-bottom:.6rem}
+.areas{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:.55rem;max-width:820px;margin:0 auto 2rem}
+.areas li{background:rgba(255,255,255,.75);border:1.5px solid var(--gold);color:var(--deep);border-radius:30px;padding:.35rem 1rem;font-weight:700;font-size:.92rem}
+.sky{display:block;width:100%;height:clamp(150px,22vw,260px)}
+.divider{max-width:600px;margin:0 auto;padding:1.6rem 1.25rem 0}.divider svg{display:block;width:100%;height:auto}.d2{padding:2rem 1.25rem 0}
+.fsun{color:var(--gold)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Sun City Alterations", "description": "Tailoring and clothing alterations in Las Vegas, NV.", "url": "https://suncityalterations.com", "logo": "https://suncityalterations.com/img/logo.png", "image": "https://suncityalterations.com/img/logo.png", "telephone": "+17029077273", "email": "hello@suncityalterations.com", "openingHours": "Mo-Sa 10:00-17:00", "areaServed": [{"@type": "City", "name": "Las Vegas, NV"}, {"@type": "Place", "name": "Henderson, NV"}, {"@type": "Place", "name": "North Las Vegas, NV"}, {"@type": "Place", "name": "Summerlin, NV"}, {"@type": "Place", "name": "Spring Valley, NV"}, {"@type": "Place", "name": "Enterprise, NV"}, {"@type": "Place", "name": "Paradise, NV"}], "knowsAbout": "Clothing alterations and tailoring"}</script>
+</head><body>
 <nav><div class="wrap"><a class="logo" href="#"><img src="img/logo.png" alt="" width="44" height="44">Sun City <span>Alterations</span></a>
 <button class="burger" id="burger" aria-expanded="false" aria-controls="navmenu" aria-label="Open menu"><span></span><span></span><span></span></button>
 <ul id="navmenu" class="menu"><li class="dd"><a href="#services">Services</a><button class="ddbtn" id="ddbtn" aria-expanded="false" aria-controls="ddmenu" aria-label="Show services menu">▾</button><ul class="sub" id="ddmenu"><li><a href="#svc-hemming">Hemming</a></li><li><a href="#svc-pants">Pants &amp; Jeans</a></li><li><a href="#svc-dress">Dress, Formal &amp; Wedding</a></li><li><a href="#svc-suits">Suits</a></li><li><a href="#svc-repairs">Zippers &amp; Repairs</a></li><li><a href="#svc-resizing">Taking In &amp; Letting Out</a></li><li class="sep"><a href="#all">All Alterations</a></li></ul></li><li><a href="#why">Why Us</a></li><li><a href="#hours">Hours</a></li><li><a href="#quote">Get a Quote</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 <header class="hero"><div class="wrap"><img class="hero-logo" src="img/logo.png" alt="Sun City Alterations logo: a sewing machine beneath a golden sun"><div class="badge">★ 30+ Years of Experience ★</div><h1>Sun City Alterations</h1>
 <p>Expert tailoring and alterations with a personal touch, so every garment fits just right.<br><strong style="color:var(--gold)">Proudly serving Las Vegas</strong></p>
 <a class="btn" href="tel:+17029077273">📞 Call Now</a><a class="btn alt" href="#contact">Contact Us</a><a class="btn alt" href="#services">Our Services</a></div></header>
+<div class="divider d1" aria-hidden="true"><svg viewBox="0 0 600 40"><line x1="0" y1="30" x2="230" y2="30" stroke="#c8913a" stroke-width="1.5"/><line x1="370" y1="30" x2="600" y2="30" stroke="#c8913a" stroke-width="1.5"/><path d="M262 30 L282 14 L294 24 L306 10 L322 26 L338 30Z" fill="#a8643a"/><path d="M276 30 a24 24 0 0 1 48 0z" fill="#e9a23b" opacity=".9"/><path d="M250 30 L282 18 L300 27 L318 16 L350 30Z" fill="#6e3f22"/><g stroke="#c8913a" stroke-width="2" stroke-linecap="round"><line x1="300" y1="4" x2="300" y2="0"/><line x1="284" y1="8" x2="281" y2="4"/><line x1="316" y1="8" x2="319" y2="4"/></g></svg></div>
 <section id="services"><div class="wrap"><h2>Our Services</h2><p class="sub">From quick hems to wedding gowns, every piece gets careful attention.</p>
 <div class="grid">
 <div class="card" id="svc-hemming"><div class="ic">📏</div><h3>Hemming</h3><p>Pants, skirts, dresses, and sleeves hemmed to the right length.</p></div>
@@ -91,9 +101,21 @@ nav .sub{position:static;width:100%;min-width:0;box-shadow:none;border:0;border-
 <div class="card"><h3>Personal Service</h3><p>We listen, take careful measurements, and fit the work to what you want.</p></div>
 <div class="card"><h3>Attention to Detail</h3><p>Clean finishes and work you'll be proud to wear.</p></div>
 </div></div></section>
+<section id="vegas" class="vegas"><div class="wrap"><h2>Proudly Serving Las Vegas</h2>
+<p class="vline">From Strip shows to quinceañeras, weddings to graduations — we keep Las Vegas looking sharp.</p>
+<p class="areas-l">Areas served</p><ul class="areas"><li>Las Vegas</li><li>Henderson</li><li>North Las Vegas</li><li>Summerlin</li><li>Spring Valley</li><li>Enterprise</li><li>Paradise</li></ul></div><svg class="sky" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Illustration of a desert mountain skyline with a setting sun">
+<defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe3a3"/><stop offset="1" stop-color="#e9a23b"/></linearGradient></defs>
+<g stroke="#ffe7b0" stroke-width="5" stroke-linecap="round" opacity=".75">
+<line x1="600" y1="40" x2="600" y2="8"/><line x1="530" y1="62" x2="512" y2="34"/><line x1="670" y1="62" x2="688" y2="34"/><line x1="478" y1="104" x2="448" y2="88"/><line x1="722" y1="104" x2="752" y2="88"/><line x1="458" y1="160" x2="424" y2="156"/><line x1="742" y1="160" x2="776" y2="156"/></g>
+<circle cx="600" cy="175" r="118" fill="url(#sg)"/>
+<path d="M0 200 L90 150 L160 182 L260 112 L340 168 L420 130 L520 186 L610 150 L700 180 L800 104 L880 160 L960 126 L1060 176 L1130 140 L1200 168 L1200 260 L0 260Z" fill="#a8643a" opacity=".85"/>
+<path d="M0 230 L120 188 L210 220 L320 176 L430 222 L540 196 L640 228 L760 184 L870 224 L990 190 L1100 226 L1200 200 L1200 260 L0 260Z" fill="#6e3f22"/>
+<g fill="#4a2a17"><path d="M170 260 v-58 a8 8 0 0 1 16 0 v58z M160 236 v-16 a5 5 0 0 1 10 0 v12 h6 v8z M186 228 h8 v-14 a5 5 0 0 1 10 0 v20 h-18z"/>
+<path d="M1010 260 v-48 a7 7 0 0 1 14 0 v48z M1000 238 v-12 a4 4 0 0 1 8 0 v8 h4 v6z M1024 232 h6 v-10 a4 4 0 0 1 8 0 v16 h-14z"/></g>
+<rect y="250" width="1200" height="10" fill="#4a2a17"/></svg></section>
 <section id="hours"><div class="wrap"><h2>Hours</h2><p class="sub">We're here to help during business hours.</p>
 <div class="box"><p class="big">Monday – Saturday</p><p style="font-size:1.3rem;margin-top:.3rem">10 AM – 5 PM</p></div></div></section>
-<section id="contact" class="contact"><div class="wrap"><h2>Contact Us</h2><p class="sub"><strong>Based in Las Vegas, NV.</strong> Call, email, or request a quote below.</p>
+<div class="divider d2" aria-hidden="true"><svg viewBox="0 0 600 40"><line x1="0" y1="30" x2="230" y2="30" stroke="#c8913a" stroke-width="1.5"/><line x1="370" y1="30" x2="600" y2="30" stroke="#c8913a" stroke-width="1.5"/><path d="M262 30 L282 14 L294 24 L306 10 L322 26 L338 30Z" fill="#a8643a"/><path d="M276 30 a24 24 0 0 1 48 0z" fill="#e9a23b" opacity=".9"/><path d="M250 30 L282 18 L300 27 L318 16 L350 30Z" fill="#6e3f22"/><g stroke="#c8913a" stroke-width="2" stroke-linecap="round"><line x1="300" y1="4" x2="300" y2="0"/><line x1="284" y1="8" x2="281" y2="4"/><line x1="316" y1="8" x2="319" y2="4"/></g></svg></div><section id="contact" class="contact"><div class="wrap"><h2>Contact Us</h2><p class="sub"><strong>Based in Las Vegas, NV.</strong> Call, email, or request a quote below.</p>
 <div class="grid">
 <div class="card"><div class="ic">📞</div><h3>Phone</h3><p><a class="cl" href="tel:+17029077273">(702) 907-7273</a></p></div>
 <div class="card"><div class="ic">✉️</div><h3>Email</h3><p><a class="cl" href="mailto:hello@suncityalterations.com">hello@suncityalterations.com</a></p></div>
@@ -107,7 +129,7 @@ nav .sub{position:static;width:100%;min-width:0;box-shadow:none;border:0;border-
 <div class="row"><label>Email (optional)<input type="email" name="email" autocomplete="email"></label><label>Service<select name="service"><option value="">Select a service…</option><option>Basic Hem</option><option>Pants Hem</option><option>Same Day Service</option><option>Shorten Jacket Sleeves</option><option>Jacket Take In</option><option>Pants Taper</option><option>Pants Waist In/Out</option><option>Replace Zipper</option><option>Darts (Take In)</option><option>Shirt Hem</option><option>Sleeve Hem (with Cuff)</option><option>Crossover Leg</option><option>Cutting Suspenders</option><option>Pleated School Skirts</option><option>Lined Hem</option><option>Dress, Formal &amp; Wedding</option><option>Suits</option><option>Taking In &amp; Letting Out</option><option>Other</option></select></label></div>
 <label>Message<textarea name="message" rows="4" placeholder="Describe your garment and what you'd like done"></textarea></label>
 <button class="btn" type="submit">Send Request</button></form></div></div></section>
-<footer>© <span id="y"></span> Sun City Alterations · Tailoring &amp; Alterations · Las Vegas, NV<br>Monday – Saturday, 10 AM – 5 PM<br><a href="tel:+17029077273">(702) 907-7273</a> · <a href="mailto:hello@suncityalterations.com">hello@suncityalterations.com</a></footer>
+<footer>© <span id="y"></span> Sun City Alterations · Tailoring &amp; Alterations · <span class="fsun" aria-hidden="true">☀</span> Las Vegas, NV<br>Monday – Saturday, 10 AM – 5 PM<br><a href="tel:+17029077273">(702) 907-7273</a> · <a href="mailto:hello@suncityalterations.com">hello@suncityalterations.com</a></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear();if(/[?&]sent=1/.test(location.search))document.getElementById('thanks').hidden=false;(function(){var a=document.getElementById('flyerLink');if(!a||!window.matchMedia)return;var m=matchMedia('(max-width:700px)');function u(){a.href=m.matches?'img/flyer-mobile.jpg':'img/flyer.jpg'}u();m.addEventListener&&m.addEventListener('change',u)})();(function(){var b=document.getElementById('burger'),m=document.getElementById('navmenu'),d=document.getElementById('ddbtn'),dd=d.parentNode;
 function setDD(o){dd.classList.toggle('open',o);d.setAttribute('aria-expanded',o)}
 function setM(o){m.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu');if(!o)setDD(false)}
